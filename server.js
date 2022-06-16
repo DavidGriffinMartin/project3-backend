@@ -59,7 +59,7 @@ app.post("/items", async (req, res) => {
 app.delete("/items/:id", async (req, res) => {
   try {
     // send all people
-    res.json(await Item.findByIdAndRemove(req.params.id));
+    res.json(await Items.findByIdAndRemove(req.params.id));
   } catch (error) {
     //send error
     res.status(400).json(error);
@@ -70,7 +70,7 @@ app.put("/items/:id", async (req, res) => {
   try {
     // send all people
     res.json(
-      await Item.findByIdAndUpdate(req.params.id, req.body, { new: true })
+      await Items.findByIdAndUpdate(req.params.id, req.body, { new: true })
     );
   } catch (error) {
     //send error
