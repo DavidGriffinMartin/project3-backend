@@ -15,10 +15,7 @@ const morgan = require("morgan");
 const cors = require("cors");
 // const Item = require("./models/item");
 
-mongoose.connect(MONGODB_URL, {
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-});
+mongoose.connect(MONGODB_URL);
 mongoose.connection
   .on("open", () => console.log("You are connected to mongoose"))
   .on("close", () => console.log("You are disconnected from mongoose"))
@@ -52,13 +49,13 @@ app.post("/items", async (req, res) => {
   }
 });
 // seed data
-// app.get("/items/seed", (req, res) => {
-//   Items.deleteMany({}, (error, allItems) => {});
+app.get("/items/seed", (req, res) => {
+  Items.deleteMany({}, (error, allItems) => {});
 
-//   Items.create(itemSeed, (error, data) => {
-//     res.redirect("/items");
-//   });
-// });
+  Items.create(itemSeed, (error, data) => {
+    res.redirect("/items");
+  });
+});
 // item delete route
 app.delete("/items/:id", async (req, res) => {
   try {

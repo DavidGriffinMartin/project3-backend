@@ -3,7 +3,7 @@ module.exports = [
     name: "Going back to your ex 5000s",
     user: "admin",
     img: "https://m.media-amazon.com/images/I/81r-DoWAUNL._AC_SX569_.jpg",
-    price: 16,
+    price: 10,
     description: "Walk of shame",
     tags: ["clown", "costume", "silly"],
     linkto:
@@ -13,7 +13,7 @@ module.exports = [
     name: "Hannah Montana 3000s",
     user: "admin",
     img: "https://m.media-amazon.com/images/I/618tILyuMsL._AC_UY575_.jpg",
-    price: 15,
+    price: 30,
     description: "You've got the best of both worlds",
     tags: ["rockstar", "sparkle"],
     linkto:
@@ -43,7 +43,7 @@ module.exports = [
     name: "Sharky Toes",
     user: "admin",
     img: "https://m.media-amazon.com/images/I/41UAOBdJmCS._AC_UY395_.jpg",
-    price: 15,
+    price: 10,
     description: "These wont bites your toes off",
     tags: ["fish", "sea"],
     linkto:
@@ -53,8 +53,8 @@ module.exports = [
     name: "Foot Salad",
     user: "admin",
     img: "https://m.media-amazon.com/images/I/61X0KdhVTRL._AC_UX395_.jpg",
-    price: 25,
-    description: "Lettuce keep you comphy",
+    price: 19,
+    description: "Lettuce keep you comfy",
     tags: ["food"],
     linkto:
       "https://www.amazon.com/Coddies-Cabbage-Shoes-Sandals-Slippers/dp/B07RGMBSF6/ref=pd_rhf_dp_s_pd_crcd_sccl_1_8/143-9529555-0159123?pd_rd_w=7XLLj&content-id=amzn1.sym.cee83ff1-8fc1-4533-a3f5-bf3d998f4558&pf_rd_p=cee83ff1-8fc1-4533-a3f5-bf3d998f4558&pf_rd_r=P8TF2X5BE455PMEGX5ZS&pd_rd_wg=JbGN2&pd_rd_r=b95a2934-4405-42a3-82b4-e193cf850110&pd_rd_i=B07RDQ8NMN&th=1&psc=1",
@@ -63,7 +63,7 @@ module.exports = [
     name: "Big Foot..foot?",
     user: "admin",
     img: "https://m.media-amazon.com/images/I/81EPR8O7odL._AC_UX679_.jpg",
-    price: 14,
+    price: 10,
     description: "Its like walking in your uncles shoes!",
     tags: ["monster", "costume"],
     linkto:
@@ -73,15 +73,17 @@ module.exports = [
     name: "Wood Walkers",
     user: "admin",
     img: "https://purplume.files.wordpress.com/2010/01/japan-footwear-003.jpg",
-    price: 35,
+    price: 20,
     description: "wood you please buy these?",
     tags: ["wood"],
+    linkto:
+      "https://www.amazon.com/Japanese-Wooden-Sandals-Traditional-25-5cm/dp/B07SNS988M/ref=sr_1_3?crid=2ZIZ4MO9OY62C&keywords=wooden+shoes&qid=1655992552&sprefix=wooden+shoe%2Caps%2C94&sr=8-3",
   },
   {
     name: "Taco Slippers",
     user: "admin",
     img: "https://i.etsystatic.com/17744357/r/il/56ac11/3491630838/il_794xN.3491630838_75w0.jpg",
-    price: 30,
+    price: 24,
     description: "Lets taco bout how stylish these are",
     tags: ["food"],
     linkto:
@@ -105,7 +107,7 @@ module.exports = [
     description: "Everyone will know your favorite movie",
     tags: ["food"],
     linkto:
-      "https://www.google.com/search?q=funny+shoes&source=lmns&tbm=shop&bih=739&biw=1334&hl=en&sa=X&ved=2ahUKEwijp7-dorX4AhXCn3IEHck7BQkQ_AUoAnoECAEQAg#spd=16797362144243025873",
+      "https://www.fun.com/irregular-choice-woz-yellow-brick-road-boot-heel.html?mpid=250994",
   },
   {
     name: "The Brony 4's",
@@ -121,7 +123,7 @@ module.exports = [
     name: "Simpsons",
     user: "admin",
     img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRIPCLM6jhrORK5kXycskv2ZpANefITPDv1AkwSJTyuZZWI76KQkVFAZLI9_nDW7MEMsiO0lT67grCJjNc2RtX1T1ueHp31bp329-g-4QVZUZ0RAPCdp1H4HQ&usqp=CAE",
-    price: 24,
+    price: 10,
     description: "Won't be caught simpin with these",
     tags: ["movie", "cute"],
     linkto:
@@ -131,7 +133,7 @@ module.exports = [
     name: "Green Michael Jackson",
     user: "admin",
     img: "http://d13y5iorv6bymp.cloudfront.net/image/cache/catalog/--a999922/green-mint-lace-up-weird-heels-heelless-horse-ponying-hoof-platforms-boots-800x800.jpg",
-    price: 130,
+    price: 100,
     description: "HEeeeeEEHEEEEEEEEeeEEE",
     tags: ["dance", "cute"],
     linkto:
@@ -141,7 +143,7 @@ module.exports = [
     name: "Lady Gagas",
     user: "admin",
     img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTlpI8waghHQMGN1I4KAjfzNbXfM1NY_6QlQLH8hQ5OjXzCCOm3_O3mqAxwZz3eQj4j7PokGZSjFzVnTMd8eCFJgq4CFwpsH8OkfcRJp_x_f1TQNmBWLDkV&usqp=CAE",
-    price: 150,
+    price: 120,
     description: "Wont have a bad romance with these",
     tags: ["dance", "cute"],
     linkto:
@@ -151,7 +153,7 @@ module.exports = [
     name: "Hobo Clowns",
     user: "admin",
     img: "https://i.ebayimg.com/images/g/kogAAOSwRbtaBLcg/s-l500.jpg",
-    price: 140,
+    price: 110,
     description: "YO WHAT ARE THOSE???",
     tags: ["ugly", "cowboy"],
     linkto: "https://www.ebay.com/itm/183389819691?chn=ps&mkevt=1&mkcid=28",
