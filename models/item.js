@@ -6,7 +6,8 @@ const itemSchema = new mongoose.Schema({
   description: String,
   img: String,
   price: Number,
-  tags: Array
+  tags: Array,
+  linkto: String
 });
 
 const Item = mongoose.model("Post", itemSchema);

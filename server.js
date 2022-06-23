@@ -2,7 +2,6 @@
 require("dotenv").config();
 const { PORT = 4000, MONGODB_URL } = process.env;
 
-
 // require express
 const express = require("express");
 const app = express();
@@ -14,9 +13,7 @@ const itemSeed = require("./models/seed");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cors = require("cors");
-const Item = require("./models/item");
-
-
+// const Item = require("./models/item");
 
 mongoose.connect(MONGODB_URL, {
   useUnifiedTopology: true,
@@ -31,9 +28,8 @@ app.use(cors()); // to prevent cors errors, open access to all origins
 app.use(morgan("dev")); // logging
 app.use(express.json()); 
 
-
 app.get("/", (req, res) => {
-  res.send("root page");
+  res.redirect('/items')
 });
 // index page
 app.get("/items", async (req, res) => {
@@ -55,7 +51,15 @@ app.post("/items", async (req, res) => {
     res.status(400).json(error);
   }
 });
-// item delte route
+// seed data
+app.get("/items/seed", (req, res) => {
+  Items.deleteMany({}, (error, allItems) => {});
+
+  Items.create(itemSeed, (error, data) => {
+    res.redirect("/items");
+  });
+});
+// item delete route
 app.delete("/items/:id", async (req, res) => {
   try {
     // send all people
@@ -81,8 +85,6 @@ app.put("/items/:id", async (req, res) => {
 app.get("/seed", (req, res) => {
   res.json(itemSeed);
 });
-
-// console.log(itemSeed)
 
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
 
