@@ -52,13 +52,13 @@ app.post("/items", async (req, res) => {
   }
 });
 // seed data
-app.get("/items/seed", (req, res) => {
-  Items.deleteMany({}, (error, allItems) => {});
+// app.get("/items/seed", (req, res) => {
+//   Items.deleteMany({}, (error, allItems) => {});
 
-  Items.create(itemSeed, (error, data) => {
-    res.redirect("/items");
-  });
-});
+//   Items.create(itemSeed, (error, data) => {
+//     res.redirect("/items");
+//   });
+// });
 // item delete route
 app.delete("/items/:id", async (req, res) => {
   try {
